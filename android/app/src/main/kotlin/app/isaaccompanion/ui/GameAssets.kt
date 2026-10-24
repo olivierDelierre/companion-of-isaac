@@ -92,11 +92,9 @@ class ResourceAssets(
     override fun itemIcon(info: ItemInfo?): Sprite? = info?.gfx?.let { icons[it.lowercase()] }
 
     companion object {
-        /** Builds assets from [source]; returns null font-less sources as plain built-in assets. */
-        fun load(source: ResourceSource, decode: (InputStream) -> ArgbImage?): GameAssets {
-            val font = loadFont(source, decode) ?: return BuiltinAssets
-            return ResourceAssets(source, decode, font)
-        }
+        /** Builds assets from [source]; the font falls back to the built-in one when none can be loaded. */
+        fun load(source: ResourceSource, decode: (InputStream) -> ArgbImage?): ResourceAssets =
+            ResourceAssets(source, decode, loadFont(source, decode) ?: BuiltinAssets.font)
 
         private fun loadFont(source: ResourceSource, decode: (InputStream) -> ArgbImage?): GameFont? {
             for (path in ResourceMap.FONT_CANDIDATES) {

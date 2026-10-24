@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.isaaccompanion.ui.ResourceAssetsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:10:57.879Z" hostname="vm" time="0.387">
+  <properties/>
+  <testcase name="locatesResourcesInsideTheExtractorFolder" classname="app.isaaccompanion.ui.ResourceAssetsTest" time="0.067"/>
+  <testcase name="screenUsesLoadedIconsAndFont" classname="app.isaaccompanion.ui.ResourceAssetsTest" time="0.305"/>
+  <testcase name="loadsFontAndIconsCaseInsensitively" classname="app.isaaccompanion.ui.ResourceAssetsTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
