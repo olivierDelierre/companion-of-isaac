@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "isaac-companion"
-include(":app")
+include(":app", ":preview")

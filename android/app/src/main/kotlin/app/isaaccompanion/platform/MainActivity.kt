@@ -1,4 +1,4 @@
-package app.isaaccompanion
+package app.isaaccompanion.platform
 
 import android.app.Activity
 import android.os.Bundle

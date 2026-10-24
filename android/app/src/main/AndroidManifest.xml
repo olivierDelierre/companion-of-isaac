@@ -9,7 +9,7 @@
         android:resizeableActivity="true"
         android:theme="@style/Theme.IsaacCompanion">
         <activity
-            android:name=".MainActivity"
+            android:name=".platform.MainActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|density|keyboardHidden|uiMode"
             android:exported="true">
             <intent-filter>
