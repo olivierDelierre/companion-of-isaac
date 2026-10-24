@@ -1,0 +1,8 @@
+<metadata>
+  <name>Isaac Companion Hello</name>
+  <directory>isaac-companion-hello</directory>
+  <id>0</id>
+  <description>Feasibility test: serves "hello from isaac" on 127.0.0.1:47777.</description>
+  <version>0.1</version>
+  <visibility>Private</visibility>
+</metadata>

@@ -1,0 +1,19 @@
+# Game assets are never committed: the user extracts them with the game's ResourceExtractor.
+resources/
+extracted_resources/
+isaac_files.txt
+isaac_text.tgz
+*.sta
+*.anm2
+# Android / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.apk
+*.iml
+.idea/
+# Python
+__pycache__/
+*.pyc
