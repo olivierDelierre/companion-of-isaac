@@ -26,20 +26,16 @@ local nextBind = 0
 local frame = 0
 
 local function tryBind()
-  local ok, err = pcall(function()
-    local s = assert(socket.tcp())
-    s:setoption("reuseaddr", true)
-    assert(s:bind("127.0.0.1", PORT))
-    assert(s:listen(1))
-    s:settimeout(0)
-    server = s
-    _G.__IsaacCompanionHelloServer = s
-  end)
-  if not ok then
+  -- socket.bind sets SO_REUSEADDR before binding and starts listening (backlog 1)
+  local s, err = socket.bind("127.0.0.1", PORT, 1)
+  if not s then
     Isaac.DebugString("[IsaacCompanionHello] bind failed: " .. tostring(err))
-  else
-    Isaac.DebugString("[IsaacCompanionHello] listening on 127.0.0.1:" .. PORT)
+    return
   end
+  s:settimeout(0)
+  server = s
+  _G.__IsaacCompanionHelloServer = s
+  Isaac.DebugString("[IsaacCompanionHello] listening on 127.0.0.1:" .. PORT)
 end
 
 local function onRender()

@@ -1,0 +1,8 @@
+<metadata>
+  <name>Isaac Companion</name>
+  <directory>isaac-companion</directory>
+  <id>0</id>
+  <description>Streams the level map and inventory to a companion app over a local TCP socket (127.0.0.1:47777). Needs --luadebug.</description>
+  <version>0.1.0</version>
+  <visibility>Private</visibility>
+</metadata>

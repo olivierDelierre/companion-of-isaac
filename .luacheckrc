@@ -10,15 +10,11 @@ read_globals = {
   "EID", "REPENTOGON",
 }
 
-globals = {
-  "__IsaacCompanionServer", -- also accessed as _G.__IsaacCompanionServer
-  "_G",
-}
-
 files["mod/**"] = {
   allow_defined_top = true,
 }
 files["tests/**"] = {
-  std = "+busted",
-  globals = { "RegisterMod", "Isaac", "Game", "ModCallbacks" },
+  -- the test harness installs a fake Isaac API into _G
+  globals = { "RegisterMod", "Isaac", "Game", "ModCallbacks", "ActiveSlot", "ItemType", "LevelCurse", "EID" },
+  ignore = { "212", "431", "631" },
 }

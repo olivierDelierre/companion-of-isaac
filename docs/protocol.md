@@ -48,7 +48,7 @@ Full snapshot, sent when it differs from the previous one and once on connect.
    "coins":7,"bombs":1,"keys":2,
    "active":{"id":105,"charge":6,"maxCharge":6,"battery":0},
    "pocketActive":{"id":0,"charge":0,"maxCharge":0},
-   "trinkets":[0,0],"card":0,"pill":0,
+   "trinkets":[0,0],"card":0,"pill":0,"pillIdentified":false,
    "items":[{"id":1,"count":1}],
    "pickupOrder":[1]}]}
 ```
@@ -59,4 +59,4 @@ Details:
 - `mapHidden` is `true` under Curse of the Lost: only the current room is sent.
 - `items` are collectibles with count > 0; `pickupOrder` lists their ids in pickup order (reconstructed by the mod, persisted per seed).
 - Pocket active / active: `id` 0 means empty.
-- `card` is a card id, `pill` a pill color; 0 means none.
+- `card` is a card id, `pill` a pill color; 0 means none. `pillIdentified` flips when the pill is identified, which makes the mod resend its `itemdb` entry.
