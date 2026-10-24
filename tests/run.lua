@@ -297,5 +297,28 @@ test("pill identification resends its itemdb entry", function()
   c:close()
 end)
 
+-- Writes what the mod sends to the file named by MOD_DUMP; the Android tests parse it as a fixture.
+test("dump a realistic session for the app tests", function()
+  local path = os.getenv("MOD_DUMP")
+  if not path then return end
+  S.world.players[2] = {
+    name = "Cain", ptype = 2, coins = 1, bombs = 0, keys = 5, items = { [1] = 1 },
+    active = 0, charge = 0, trinkets = { 0, 0 }, card = 0, pill = 0,
+  }
+  S.world.players[1].card, S.world.players[1].pill = 11, 3
+  loadMod()
+  S.callbacks.started(nil, false)
+  local c = connect()
+  local lines = readLines(c, hasType("state"))
+  S.pillIdentified = true
+  for _, l in ipairs(readLines(c, hasType("itemdb"), 40)) do lines[#lines + 1] = l end
+  S.callbacks.exit()
+  for _, l in ipairs(readLines(c, hasType("idle"), 10)) do lines[#lines + 1] = l end
+  local f = assert(io.open(path, "w"))
+  f:write(table.concat(lines, "\n"), "\n")
+  f:close()
+  c:close()
+end)
+
 print(("\n%d passed, %d failed"):format(passed, failures))
 os.exit(failures == 0 and 0 or 1)

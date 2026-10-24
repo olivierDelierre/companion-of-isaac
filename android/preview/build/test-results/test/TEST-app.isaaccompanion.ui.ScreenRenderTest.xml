@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="app.isaaccompanion.ui.ScreenRenderTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:10:58.269Z" hostname="vm" time="1.741">
+<testsuite name="app.isaaccompanion.ui.ScreenRenderTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:13:59.912Z" hostname="vm" time="1.689">
   <properties/>
-  <testcase name="waitingScreens" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.383"/>
-  <testcase name="connectedSinglePlayer" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.107"/>
-  <testcase name="otherSizesDoNotCrash" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.108"/>
-  <testcase name="childAndGhostPlayersAreHidden" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.086"/>
-  <testcase name="twoPlayersHaveTabs" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.167"/>
-  <testcase name="lostCurseShowsOnlyTheCurrentRoom" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.088"/>
-  <testcase name="manyItemsScroll" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.207"/>
-  <testcase name="parsedFakeServerStateRenders" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.104"/>
-  <testcase name="tapResolvesToItems" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.093"/>
-  <testcase name="bubbleForPassiveAndActive" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.395"/>
+  <testcase name="waitingScreens" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.302"/>
+  <testcase name="connectedSinglePlayer" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.082"/>
+  <testcase name="otherSizesDoNotCrash" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.112"/>
+  <testcase name="childAndGhostPlayersAreHidden" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.095"/>
+  <testcase name="twoPlayersHaveTabs" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.208"/>
+  <testcase name="lostCurseShowsOnlyTheCurrentRoom" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.104"/>
+  <testcase name="manyItemsScroll" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.212"/>
+  <testcase name="parsedFakeServerStateRenders" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.078"/>
+  <testcase name="tapResolvesToItems" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.091"/>
+  <testcase name="bubbleForPassiveAndActive" classname="app.isaaccompanion.ui.ScreenRenderTest" time="0.403"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

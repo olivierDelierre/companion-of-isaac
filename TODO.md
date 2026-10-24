@@ -17,8 +17,8 @@ Reference docs: `docs/protocol.md` (wire format), `docs/DECISIONS.md` (choices t
 ## Done (autonomous session)
 
 - [x] `README.md`, `tools/fake_server.py`, `.github/workflows/build.yml`.
-- [x] `mod/isaac-companion`: server, collection, anti-spoil, pickup order, itemdb, EID, tests (`lua5.3 tests/run.lua`, 15 passing).
-- [x] Android: protocol parser, reconnecting TCP client, `.anm2` / BMFont / `stringtable.sta` parsers, SAF source, UI variant (c), tap bubble, tabs, scroll, immersive + keep-screen-on. 38 unit tests; the debug APK builds.
+- [x] `mod/isaac-companion`: server, collection, anti-spoil, pickup order, itemdb, EID, tests (`lua5.3 tests/run.lua`, 16 passing).
+- [x] Android: protocol parser, reconnecting TCP client, `.anm2` / BMFont / `stringtable.sta` parsers, SAF source, UI variant (c), tap bubble, tabs, scroll, immersive + keep-screen-on. 39 JVM tests (incl. contract tests on the real mod output and the fake server); the debug APK builds.
 
 ## Remaining
 
